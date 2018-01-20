@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/coordinate">
+
+
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:background="#ffffff">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="20dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="30dp">
+
+                    <com.hetulpatel.fellow.fellowv2.FontTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Semester"
+                        android:textSize="20dp"
+                        android:textColor="#C1C1C1"/>
+
+                    <com.hetulpatel.fellow.fellowv2.FontTextView
+                        android:id="@+id/currentsem"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="7"
+                        android:textSize="64dp"
+                        android:layout_marginTop="-15dp"
+                        android:textColor="@color/blue"/>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="30dp">
+
+                    <com.hetulpatel.fellow.fellowv2.FontTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Courses"
+                        android:textSize="20dp"
+                        android:textColor="#C1C1C1"/>
+
+                    <com.hetulpatel.fellow.fellowv2.FontTextView
+                        android:id="@+id/currentcourse"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="6"
+                        android:textSize="64dp"
+                        android:layout_marginTop="-15dp"
+                        android:textColor="@color/blue" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="50dp">
+
+                    <ImageView
+                        android:id="@+id/plusenabled"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_width="34dp"
+                        android:layout_height="34dp"
+                        android:src="@drawable/plusenabled"/>
+
+                    <com.hetulpatel.fellow.fellowv2.FontTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Add new course"
+                        android:layout_marginTop="3dp"
+                        android:textSize="10dp"
+                        android:textColor="@color/blue"/>
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/devider"
+                android:layout_marginTop="10dp"/>
+
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/currentcourserecyclerview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:divider="@null"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="40dp"
+                android:dividerHeight="0dp">
+
+            </android.support.v7.widget.RecyclerView>
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+    <ImageView
+        android:id="@+id/currentcourse_managetimtable"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@drawable/timetable"
+        android:layout_gravity="bottom|right"/>
+
+</android.support.design.widget.CoordinatorLayout>
+

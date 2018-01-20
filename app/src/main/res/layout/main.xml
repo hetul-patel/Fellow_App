@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:layout_alignParentTop="true"
+        android:id="@+id/camera_preview"
+        android:layout_width="match_parent"
+        android:layout_margin="10dp"
+        android:layout_height="match_parent" >
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <FrameLayout
+            android:id="@+id/flBtnContainer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+
+            <Button
+                android:id="@+id/ibCapture"
+                android:layout_gravity="bottom|right"
+                android:background="@drawable/camera_right"
+                android:layout_width="65dp"
+                android:layout_height="65dp" />
+
+            <Button
+                android:id="@+id/back"
+                android:layout_gravity="bottom|left"
+                android:background="@drawable/camera_left"
+                android:layout_width="65dp"
+                android:layout_height="65dp" />
+            
+            <com.hetulpatel.fellow.fellowv2.FontTextView
+                android:id="@+id/camera_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center_horizontal"
+                android:text="Machine Learning"
+                android:padding="8dp"
+                android:textSize="10dp"
+                android:alpha="50"
+                android:textColor="@color/blue"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/border"/>
+
+
+        </FrameLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ffffff</color>
+    <color name="colorPrimaryDark">#ffffff</color>
+    <color name="colorAccent">#a6a6a6</color>
+    <color name="blue">#1AB5B5</color>
+    <color name="darkgrey">#949494</color>
+    <color name="devider">#EDEDED</color>
+    <color name="navigation_notselected">#98EBEB</color>
+
+    <color name="black_overlay">#66000000</color>
+</resources>

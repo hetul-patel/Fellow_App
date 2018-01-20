@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+
+
+    <RelativeLayout
+        android:layout_width="70dp"
+        android:layout_height="116dp">
+
+        <View
+            android:id="@+id/left_devider"
+            android:layout_width="1dp"
+            android:layout_height="132dp"
+            android:visibility="gone"
+            android:layout_alignParentLeft="true"
+            android:background="@color/devider"/>
+
+        <com.hetulpatel.fellow.fellowv2.FontTextView
+            android:id="@+id/item_current_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:text="TitleTitleTitleTitleTitleTitleTitleTitle"
+            android:textSize="12dp"
+            android:layout_marginLeft="16dp"
+            android:textColor="#6C6565"
+            />
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/devider"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="16dp"
+            android:id="@+id/view" />
+
+        <com.hetulpatel.fellow.fellowv2.FontTextView
+            android:id="@+id/item_current_pages"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pages"
+            android:textSize="10dp"
+            android:textColor="#BFC4C4"
+            android:layout_marginBottom="15dp"
+            android:layout_above="@+id/view"
+            android:layout_alignLeft="@+id/item_current_title"
+            android:layout_alignStart="@+id/item_current_title" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="116dp">
+
+
+        <ImageView
+            android:id="@+id/item_current_dustbin"
+            android:layout_width="12dp"
+            android:layout_height="15dp"
+            android:src="@drawable/dustbin"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="27dp"
+            android:layout_marginBottom="32dp"
+            android:visibility="gone"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/devider"
+            android:layout_marginBottom="16dp"
+            android:layout_alignParentBottom="true"/>
+
+        <View
+            android:id="@+id/right_devider"
+            android:layout_width="1dp"
+            android:layout_height="132dp"
+            android:layout_alignParentRight="true"
+            android:background="@color/devider"/>
+
+        <ImageView
+            android:id="@+id/item_current_plus"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/plus"
+            android:layout_marginRight="16dp"
+            android:layout_alignParentRight="true" />
+
+    </RelativeLayout>
+
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_home_activity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.hetulpatel.fellow.fellowv2.Home_activity"
+    tools:showIn="@layout/layout_home_activity">
+
+    <ImageView
+        android:id="@+id/logout"
+        android:layout_width="22dp"
+        android:layout_height="20dp"
+        android:src="@drawable/logout"
+        android:layout_margin="16dp"
+        android:layout_alignParentRight="true"/>
+
+    <LinearLayout
+        android:id="@+id/home_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="50dp"
+        android:layout_alignParentTop="true">
+
+        <com.hetulpatel.fellow.fellowv2.FontTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#BFC4C4"
+            android:text="Hello"
+            android:textSize="31dp"/>
+
+        <com.hetulpatel.fellow.fellowv2.FontTextView
+            android:id="@+id/NameOfUser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-7dp"
+            android:text="Hetul"
+            android:textSize="49dp"
+            android:textColor="@color/blue"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="-1dp" />
+
+        <LinearLayout
+            android:layout_marginTop="-8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.hetulpatel.fellow.fellowv2.FontTextView
+                android:id="@+id/DayOfWeek"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Monday,"
+                android:textSize="11dp"
+                android:layout_marginRight="2dp"
+                android:layout_marginLeft="2dp"
+                android:textColor="@color/darkgrey"/>
+
+            <com.hetulpatel.fellow.fellowv2.FontTextView
+                android:id="@+id/DateAndMonth"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="12 March"
+                android:textSize="11dp"
+                android:textColor="#BFC4C4"/>
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/home_2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/devider"
+        android:layout_marginTop="40dp"
+        android:layout_below="@+id/home_1"/>
+
+    <LinearLayout
+        android:id="@+id/home_3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/home_2"
+        android:orientation="vertical"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="50dp">
+
+        <com.hetulpatel.fellow.fellowv2.FontTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#7c7c7c"
+            android:text="Let’s get started!"
+            android:textSize="12dp"/>
+
+        <com.hetulpatel.fellow.fellowv2.FontTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="First, let us create a shelf\nwhere you can put your daily\ncollege notes! "
+            android:textSize="11dp"
+            android:textColor="#95989A"
+            android:layout_marginLeft="-1dp"
+            android:id="@+id/fontTextView" />
+
+
+    </LinearLayout>
+
+</RelativeLayout>

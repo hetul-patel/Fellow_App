@@ -1,0 +1,21 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/blue"
+    android:minHeight="?android:attr/listPreferredItemHeightSmall">
+
+
+    <com.hetulpatel.fellow.fellowv2.FontTextView
+        android:id="@+id/textViewName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:paddingRight="10dp"
+        android:text="Item Name"
+        android:textColor="#98EBEB"
+        android:textSize="17dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
+        />
+
+</RelativeLayout>

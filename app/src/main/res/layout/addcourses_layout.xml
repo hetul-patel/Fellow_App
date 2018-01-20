@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/coordinate_addcourse">
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="40dp">
+
+            <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="30dp">
+
+            <com.hetulpatel.fellow.fellowv2.FontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Semester"
+                android:textSize="20dp"
+                android:textColor="#C1C1C1"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/question"
+                android:textSize="64dp"
+                android:layout_marginTop="-15dp"
+                android:textColor="@color/blue"/>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="30dp">
+
+            <com.hetulpatel.fellow.fellowv2.FontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Courses"
+                android:textSize="20dp"
+                android:textColor="#C1C1C1"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/question"
+                android:textSize="64dp"
+                android:layout_marginTop="-15dp"
+                android:textColor="@color/blue"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                android:layout_marginLeft="50dp">
+
+                <ImageView
+                    android:layout_gravity="center_horizontal"
+                    android:layout_width="34dp"
+                    android:layout_height="34dp"
+                    android:src="@drawable/addicondiabled"/>
+
+                <com.hetulpatel.fellow.fellowv2.FontTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Add new course"
+                    android:layout_marginTop="3dp"
+                    android:textSize="10dp"
+                    android:textColor="#EDEDED"/>
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/devider"
+            android:layout_marginTop="10dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="100dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/semester"
+                android:textColor="#95989A"
+                android:textSize="11dp"/>
+
+            <EditText
+                android:id="@+id/numberofsemester"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:textColor="@color/blue"
+                android:textSize="30dp"
+                android:layout_marginTop="14dp"
+                android:backgroundTint="@color/darkgrey"
+                android:inputType="number"
+                android:maxLines="1"
+                android:maxLength="2"
+                android:hint="@string/question" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginRight="150dp"
+            android:layout_marginTop="-8dp"
+            android:background="@color/devider"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="100dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/course"
+                android:textColor="#95989A"
+                android:textSize="11dp"/>
+
+            <EditText
+                android:id="@+id/numberofcourses"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:textColor="@color/blue"
+                android:textSize="30dp"
+                android:maxLines="1"
+                android:maxLength="2"
+                android:inputType="number"
+                android:layout_marginTop="14dp"
+                android:backgroundTint="@color/darkgrey"
+                android:hint="@string/question" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginRight="150dp"
+            android:layout_marginTop="-8dp"
+            android:background="@color/devider"/>
+
+        <ListView
+            android:id="@+id/edittextinflate"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@null"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="50dp"
+            android:dividerHeight="0dp"
+            android:descendantFocusability="beforeDescendants">
+
+        </ListView>
+
+        <LinearLayout
+            android:id="@+id/addcourse_btn"
+            android:layout_width="200dp"
+            android:layout_height="100dp"
+            android:orientation="vertical"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:visibility="gone"
+            android:background="@drawable/button">
+
+            <com.hetulpatel.fellow.fellowv2.FontTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:textSize="20dp"
+                android:layout_marginTop="13dp"
+                android:text="Well done fellow!"
+                android:textColor="#ffffff"/>
+
+            <com.hetulpatel.fellow.fellowv2.FontTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                android:textSize="10dp"
+                android:text="Now you can start saving!"
+                android:textColor="#85ffffff"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
+
+</android.support.design.widget.CoordinatorLayout>
+

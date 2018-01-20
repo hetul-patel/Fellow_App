@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+
+<LinearLayout
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/schedule_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="18dp">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <com.hetulpatel.fellow.fellowv2.FontTextView
+        android:id="@+id/reset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:padding="10dp"
+        android:textSize="10dp"
+        android:gravity="center"
+        android:background="@drawable/border"
+        android:textColor="@color/blue"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:text="Reset to default"/>
+
+</LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>

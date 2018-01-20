@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">FellowV2</string>
+    <string name="title_activity_home_activity">Home_activity</string>
+    <string name="question">\?</string>
+    <string name="semester">Can you please tell me\nyour current <b>semester?</b></string>
+    <string name="course">Can you please tell me\nnumber of <b>courses?</b></string>
+    <string name="newcourse">How many new courses \ndo you want to add ?</string>
+
+    <string-array name="navigation_drawer_items_array">
+        <item>Home</item>
+        <item>Courses</item>
+        <item>Schedule</item>
+        <item>Settings</item>
+        <item>Exit</item>
+    </string-array>
+    <string name="title_activity_tabbed">Tabbed</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+
+    <array name="dummy_items">
+        <item>One</item>
+        <item>Two</item>
+        <item>Three</item>
+        <item>Four</item>
+        <item>Five</item>
+        <item>Six</item>
+        <item>Seven</item>
+        <item>Eight</item>
+        <item>Nine</item>
+        <item>Ten</item>
+    </array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="secondsOfVideo">hello</string>
+    <string name="recordingFailed">failed</string>
+
+    <string name="title_activity_splashscreen">Fellow</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+</resources>
+
+

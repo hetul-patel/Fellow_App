@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.hetulpatel.fellow.fellowv2.Home_with_courses">
+
+
+
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:background="#ffffff">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            tools:context="com.hetulpatel.fellow.fellowv2.Home_with_courses"
+            tools:showIn="@layout/layout_home_activity">
+
+
+
+            <ListView
+                android:id="@+id/listofcourses_homewithcourses"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="80dp"
+                android:layout_marginLeft="30dp"
+                android:divider="@null"
+                android:dividerHeight="0dp"
+                android:descendantFocusability="beforeDescendants">
+
+            </ListView>
+
+
+        </RelativeLayout>
+
+
+    </android.support.v4.widget.NestedScrollView>
+
+    <ImageView
+        android:id="@+id/homewithcourses_plus_btn"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@drawable/bottomplus"
+        android:layout_gravity="bottom|right"/>
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/collapsing_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true"
+            android:layout_marginTop="30dp"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+
+
+        <LinearLayout
+            android:id="@+id/home_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="30dp"
+            android:layout_marginBottom="20dp"
+            android:layout_alignParentTop="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <com.hetulpatel.fellow.fellowv2.FontTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#BFC4C4"
+                    android:textStyle="italic"
+                    android:text="Hello"
+                    android:textSize="31dp"
+
+                    android:id="@+id/fontTextView2" />
+
+                <com.hetulpatel.fellow.fellowv2.FontTextView
+                    android:id="@+id/NameOfUser_homewithcourses"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Hetul"
+                    android:textSize="49dp"
+                    android:textColor="@color/blue" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.hetulpatel.fellow.fellowv2.FontTextView
+                    android:id="@+id/DayOfWeek_homewithcouses"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Mon,"
+                    android:textSize="11dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginRight="2dp"
+                    android:layout_marginLeft="2dp"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/darkgrey"/>
+
+                <com.hetulpatel.fellow.fellowv2.FontTextView
+                    android:id="@+id/DateAndMonth_homewithcourses"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="12 March"
+                    android:textSize="11dp"
+                    android:textColor="#BFC4C4"
+                    android:layout_marginLeft="28dp"
+                    android:layout_alignLeft="@+id/DayOfWeek_homewithcouses"
+                    android:layout_centerVertical="true" />
+
+                <com.hetulpatel.fellow.fellowv2.FontTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Want a break today ?"
+                    android:textColor="#95989A"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="60dp"
+                    android:layout_centerVertical="true"
+                    android:textSize="11dp"/>
+
+                <CheckBox
+                    android:id="@+id/breakaday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:backgroundTint="#BFC4C4"
+                    android:layout_marginRight="20dp"
+                    android:layout_centerVertical="true"
+                    android:theme="@style/BrandedSwitch"
+                    app:buttonTint="#1AB5B5"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+
+</android.support.design.widget.CoordinatorLayout>
